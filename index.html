@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+
+}
+    </style>
+</head>
+<body class="bg-[#05062B]">
+
+    <!--    -   -   -   -   -   -   -   -   -   -   FOR MOBILE DEVICES   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+    <!--    -   -   -   -   -   -   -   -   -   -   FOR MOBILE DEVICES   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+    <!--    -   -   -   -   -   -   -   -   -   -   FOR MOBILE DEVICES   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+    <!--    -   -   -   -   -   -   -   -   -   -   FOR MOBILE DEVICES   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+
+    <div class="w-[100vw] h-auto flex justify-center font-poppins sm:hidden">
+        
+        <div class="w-4/5">
+
+    <!-- HEADER -->
+
+            <div class="text-white w-full">
+                <div>
+                    <h1 class="text-3xl font-julius">
+                        DRONE
+                    </h1>
+                    <h6>Projects</h6>
+                    <hr class="border-2 w-[88%]">
+                </div>
+            </div>
+
+    <!-- COMPLETED PROJECTS -->
+
+            <div class="text-white">
+                <div class="flex justify-center">
+                    <h1 class="text-lg p-1">Completed Projects</h1>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 mt-4">
+
+                    <!-- COMPLETED PROJECTS BUTTON-1 -->
+
+                    <button onclick="popups(`card-c-1`)" class="w-24 h-20 text-black mx-auto grid grid-rows-6 rounded-md overflow-hidden">
+                        <div class="row-span-4">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-mark-F404.png?raw=true" alt="" class="object-fill w-full">
+                        </div>
+                        <div class="row-span-2 bg-white">
+                            <div class="w-full h-full grid grid-rows-2 gap-0">
+                                <div class="row-span-1">
+                                    <h6 class="text-xs">UDN-Mark-F404</h6>
+                                </div>
+                                <div class="row-span-1 text-[8px]">
+                                    <h6 class="float-right m-1 mt-0">read more</h6>
+                                </div>
+                            </div>
+                        </div>    
+                    </button>
+
+                    <!-- COMPLETED PROJECTS BUTTON-2 -->
+
+                    <button onclick="popups(`card-c-2`)" class="w-24 h-20 text-black mx-auto grid grid-rows-6 rounded-md overflow-hidden">
+                        <div class="row-span-4">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-firebolt-F404.png?raw=true" alt="" class="object-fill w-full">
+                        </div>
+                        <div class="row-span-2 bg-white">
+                            <div class="w-full h-full grid grid-rows-2 gap-0">
+                                <div class="row-span-1">
+                                    <h6 class="text-xs">UDN-FirebolT-F404</h6>
+                                </div>
+                                <div class="row-span-1 text-[8px]">
+                                    <h6 class="float-right m-1 mt-0">read more</h6>
+                                </div>
+                            </div>
+                        </div>    
+                    </button>
+                                
+                </div>
+            </div>
+
+
+    <!-- CARDS COMPLETED PROJECTS -->
+    <!-- CARDS COMPLETED PROJECTS -->
+    <!-- CARDS COMPLETED PROJECTS -->
+    <!-- CARDS COMPLETED PROJECTS -->
+
+
+            <div class="flex justify-center items-center">
+
+                <!-- COMPLETED CARD-1 -->
+
+                <div id="card-c-1" class=" w-[90%] bg-white absolute hidden">
+                    
+                    <div class="flex justify-center m-6">
+                        <img src="https://raw.githubusercontent.com/sri766/udaan-website/main/images/plane-projects/nora.png" alt="" class="w-[50%]">
+                    </div>
+                    <div class="w-[85%] ml-8">
+
+                        <h1 class="text-2xl">UDN-Mark-F404</h1>
+
+                        <p>About:UDN-MarK - F404 is designed for agile flight and smooth control this is equipped with powerful BLDC motors which provides tremendous amount of thrust to UDN-MarK - F404. Its lightweight and compact design makes it highly manoeuvrable, it's perfect for both indoor and outdoor flights.it is capable of lifting about 6 kgs of weight at its maximum throttle.
+                           
+                                
+                        </p>
+
+                        <ul class="mt-4">
+                            <li>Specifications :</li>
+                            <li>Flight controller:</li>
+                            <li>Frame size:</li>
+                            <li>Weight:</li>
+                            <li>Flight modes:</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex justify-center m-4">
+                        <button onclick="close_popup(`card-c-1`)" class="btn bg-[#04aa6d] text-white my-2 mx-2 rounded-lg font-bold px-4 py-2"> Close </button>
+                    </div>
+
+                </div>
+
+                <!-- COMPLETED CARD-2 -->
+                
+                <div id="card-c-2" class=" w-[90%] bg-white absolute hidden">
+                    
+                    <div class="flex justify-center m-6">
+                        <img src="https://raw.githubusercontent.com/sri766/udaan-website/main/images/plane-projects/fatboy.png" alt="" class="w-[50%]">
+                    </div>
+                    <div class="w-[85%] ml-8">
+
+                        <h1 class="text-2xl">UDN-FirebolT-F404</h1>
+
+                        <p>About: FirebolT is designed for its speed. It is a perfect UAV for fpv racing or freestyle its sturdy construction ensures durability and resistance during high speed maneuvering.it is equipped with high definition camera mounted on it.this model is mainly constructed for racing and it will be participating in World Robotics Competition Technoxian 2023.
+    
+                        </p>
+
+                        <ul class="mt-4">
+                            <li>Specifications:</li>
+                            <li>Flight controller</li>
+                            <li>Frame size:</li>
+                            <li>Weight:</li>
+                            <li>Flight modes:</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex justify-center m-4">
+                        <button onclick="close_popup(`card-c-2`)" class="btn bg-[#04aa6d] text-white my-2 mx-2 rounded-lg font-bold px-4 py-2"> Close </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+    <!-- UPCOMING PROJECTS -->
+
+
+            <!-- CARDS OF UPCOMING PROJECTS -->
+            <!-- CARDS OF UPCOMING PROJECTS -->
+            <!-- CARDS OF UPCOMING PROJECTS -->
+            <!-- CARDS OF UPCOMING PROJECTS -->
+            <div class="flex justify-center items-center">
+
+                <!-- UPCOMING CARD-1 -->
+                
+                <div id="card-u-1" class=" w-[90%] bg-white absolute hidden">
+                    
+                    <div class="flex justify-center m-6">
+                        <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-optimus%20prime.png?raw=true" alt="" class="w-[50%]">
+                    </div>
+                    <div class="w-[85%] ml-8">
+
+                        <h1 class="text-2xl">UDN-Optimus prime</h1>
+                        <h2>About:</h2>
+
+                        <p>About: Optimus is a highly advanced UAV that is specially engineered to capture other drones in mid air, neutralising potential threats with its precision and efficiency. This will be equipped with more sensors than a normal quad.this can be used when other drones are flying in restricted area.many autonomous features and specifications will be announced soon.
+  
+                        </p>
+
+                       
+
+                    </div>
+
+                    <div class="flex justify-center m-4">
+                        <button onclick="close_popup(`card-u-1`)" class="btn bg-[#04aa6d] text-white my-2 mx-2 rounded-lg font-bold px-4 py-2"> Close </button>
+                    </div>
+
+                </div>
+
+                <!-- UPCOMING CARD-2 -->
+                
+                <div id="card-u-2" class=" w-[90%] bg-white absolute hidden">
+                    
+                    <div class="flex justify-center m-6">
+                        <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-helicarrier.png?raw=true" alt="" class="w-[50%]">
+                    </div>
+                    <div class="w-[85%] ml-8">
+
+                        <h1 class="text-2xl">UDN Helicarrier</h1>
+
+                        <p>
+                            About: Helicarrier will be engineered to tackle demanding logistics challenges. It will be able to lift and transport heavy loads with a very high accuracy. Not only the weight but it will be able to clutch any object with an irregular shape. Despite the load it will be remarkable for flying with stability and strength.the lifting process is completely done only by  Helicarrier no human interference will be noticed.
+ 
+                    </p>
+
+                       
+
+                    </div>
+
+                    <div class="flex justify-center m-4">
+                        <button onclick="close_popup(`card-u-2`)" class="btn bg-[#04aa6d] text-white my-2 mx-2 rounded-lg font-bold px-4 py-2"> Close </button>
+                    </div>
+
+                </div>
+
+                <!-- UPCOMING CARD-3 -->
+                
+                <div id="card-u-3" class=" w-[90%] bg-white absolute hidden">
+                    
+                    <div class="flex justify-center m-6">
+                        <img src="https://raw.githubusercontent.com/sri766/udaan-website/main/images/plane-projects/udn-vtol.png" alt="" class="w-[50%]">
+                    </div>
+                    <div class="w-[85%] ml-8">
+
+                        <h1 class="text-2xl">UDN-VTOL</h1>
+                        
+
+                        <p>UDN-VTOL with outonomous flight capabilities combines the advantages of vertical takeoff and landing with the
+                            efficiency of horizontal flight, its onboard sensors, flight controller, and advanced control systems allow for 
+                        autonomous operation, making it a powerful tool for various applications such as erial surveying mapping, cargo 
+                        delivery, and more.    
+                        </p>
+
+                       
+
+                    </div>
+
+                    <div class="flex justify-center m-4">
+                        <button onclick="close_popup(`card-u-3`)" class="btn bg-[#04aa6d] text-white my-2 mx-2 rounded-lg font-bold px-4 py-2"> Close </button>
+                    </div>
+
+                </div>
+
+
+                
+
+            </div>
+
+    <!-- UPCOMING BUTTONS -->
+
+            <div class="text-white my-8">
+                <div class="flex justify-center">
+                    <h1 class="text-lg p-1">Upcoming Projects</h1>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 mt-4">
+
+                    <!-- UPCOMING BUTTON-1 -->
+
+                    <button onclick="popups(`card-u-1`)" class="w-24 h-20 text-black mx-auto grid grid-rows-6 rounded-md overflow-hidden">
+                        <div class="row-span-4">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-optimus%20prime.png?raw=true" alt="" class="object w-full">
+                        </div>
+                        <div class="row-span-2 bg-white">
+                            <div class="w-full h-full grid grid-rows-2 gap-0">
+                                <div class="row-span-1">
+                                    <h6 class="text-xs">UDN-Optimus prime</h6>
+                                </div>
+                                <div class="row-span-1 text-[8px]">
+                                    <h6 class="float-right m-1 mt-0">read more</h6>
+                                </div>
+                            </div>
+                        </div>    
+                    </button>
+
+                    <!-- UPCOMING BUTTON-2 -->
+
+                    <button onclick="popups(`card-u-2`)" class="w-24 h-20 text-black mx-auto grid grid-rows-6 rounded-md overflow-hidden">
+                        <div class="row-span-4">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-helicarrier.png?raw=true">
+                        </div>
+                        <div class="row-span-2 bg-white">
+                            <div class="w-full h-full grid grid-rows-2 gap-0">
+                                <div class="row-span-1">
+                                    <h6 class="text-xs">UDN-Helicarrier</h6>
+                                </div>
+                                <div class="row-span-1 text-[8px]">
+                                    <h6 class="float-right m-1 mt-0">read more</h6>
+                                </div>
+                            </div>
+                        </div>    
+                    </button>
+
+                    
+                
+                </div>
+
+                <!-- UPCOMING BUTTON-3 -->
+
+                <button onclick="popups(`card-u-3`)" class="w-24 h-20 text-black mx-auto grid grid-rows-6 rounded-md overflow-hidden mt-20">
+                    <div class="row-span-4">
+                        <img src="https://raw.githubusercontent.com/sri766/udaan-website/main/images/plane-projects/udn-vtol.png" alt="" class="object-fill w-full">
+                    </div>
+                    <div class="row-span-2 bg-white">
+                        <div class="w-full h-full grid grid-rows-2 gap-0">
+                            <div class="row-span-1">
+                                <h6 class="text-xs">UDN-Volt</h6>
+                            </div>
+                            <div class="row-span-1 text-[8px]">
+                                <h6 class="float-right m-1 mt-0">read more</h6>
+                            </div>
+                        </div>
+                    </div>    
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+<!--    -   -   -   -   -   -   -   -   -   -   -   -   FOR PC  -   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+<!--    -   -   -   -   -   -   -   -   -   -   -   -   FOR PC  -   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+<!--    -   -   -   -   -   -   -   -   -   -   -   -   FOR PC  -   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+<!--    -   -   -   -   -   -   -   -   -   -   -   -   FOR PC  -   -   -   -   -   -   -   -   -   -   -   -   -   -    -->
+
+
+    <div class="w-full bg-[rgb(5,6,43)] justify-center font-poppins hidden sm:flex">
+
+        <div class="h-[582px] w-[575px] rounded-[583px] z-0 bg-[#8000ff9c] blur-[500.46499633789062px] absolute top-[550px] -left-[290px]">
+
+        </div>
+        
+        
+
+        <div class="w-[70%] flex z-10 text-xl">
+            
+            <div class="text-white">
+                <div>
+                    <h1 class="text-5xl font-julius">
+                        DRONE
+                    </h1>
+                    <h6>Projects</h6>
+                    <hr class="border-2 w-1/2">
+                </div>
+
+                <div class="flex justify-center">
+                    <h1 class="text-[45px] font-medium p-1 m-8">Completed Projects</h1>
+                </div>
+
+                <div>
+
+
+                    <div class="flex w-full my-5">
+                        <div class="w-[70%] mr-9">
+
+                            <h1 class="text-[35px] my-4">UDN-Mark-F404</h1>
+                            
+
+                            <p>About:UDN-MarK - F404 is designed for agile flight and smooth control this is equipped with powerful BLDC motors which provides tremendous amount of thrust to UDN-MarK - F404. Its lightweight and compact design makes it highly manoeuvrable, it's perfect for both indoor and outdoor flights.it is capable of lifting about 6 kgs of weight at its maximum throttle.
+    
+                            </p>
+
+                            <ul class="mt-4">
+                                <li>Specifications:</li>
+                                <li>Flight controller:</li>
+                                <li>Frame size:</li>
+                                <li>Weight:</li>
+                                <li>Flight modes:</li>
+                                
+                            </ul>
+
+                        </div>
+
+                        <div class="w-[30%] flex items-center">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-mark-F404.png?raw=true" alt="">
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="flex w-full my-5">
+                        <div class="w-[30%] flex items-center">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-firebolt-F404.png?raw=true" alt="">
+                        </div>
+                        <div class="w-[70%] ml-9">
+
+                            <h1 class="text-[35px] my-4">UDN-FirebolT-F404</h1>
+
+                            <p>About: FirebolT is designed for its speed. It is a perfect UAV for fpv racing or freestyle its sturdy construction ensures durability and resistance during high speed maneuvering.it is equipped with high definition camera mounted on it.this model is mainly constructed for racing and it will be participating in World Robotics Competition Technoxian 2023.
+
+                            </p>
+
+                            <ul class="mt-4">
+                             <li>Specifications:</li>
+                                <li>Flight controller:</li>
+                                <li>Frame size:</li>
+                                <li>Weight:</li>
+                                <li>Flight modes:</li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+    <!-- UPCOMING PROJECTS -->
+    <!-- UPCOMING PROJECTS -->
+
+                <div class="flex justify-center my-16">
+                    <h1 class="text-3xl">Upcoming Projects</h1>
+                </div>
+
+                <div>
+                    <div class="w-[90%] flex float-right my-10 mt-0">
+                        <div class="w-[30%] flex items-center justify-center">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-optimus%20prime.png?raw=true" alt="" class="w-52">
+                        </div>
+                        <div class="w-[70%]">
+                            
+                            <h1 class="text-[35px] my-4">UDN-Optimus prime</h1>
+                            
+                            <p>
+                                About: Optimus is a highly advanced UAV that is specially engineered to capture other drones in mid air, neutralising potential threats with its precision and efficiency. This will be equipped with more sensors than a normal quad.this can be used when other drones are flying in restricted area.many autonomous features and specifications will be announced soon.
+ 
+                            </p>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="w-[90%] flex float-left my-10">
+                        <div class="w-[70%]">
+                            
+                            <h1 class="text-[35px] my-4">UDN-Helicaptor</h1>
+                            
+                            <p>
+                                About: Helicarrier will be engineered to tackle demanding logistics challenges. It will be able to lift and transport heavy loads with a very high accuracy. Not only the weight but it will be able to clutch any object with an irregular shape. Despite the load it will be remarkable for flying with stability and strength.the lifting process is completely done only by  Helicarrier no human interference will be noticed. 
+                            </p>
+                            
+                        </div>
+                        <div class="w-[30%] flex items-center justify-center">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-helicarrier.png?raw=true" alt="" class="w-52">
+                        </div>
+                    </div>
+
+
+                    <div class="w-[90%] flex float-right my-10">
+                        <div class="w-[30%] flex items-center justify-center">
+                            <img src="https://github.com/sri766/udaan-website/blob/main/images/Drone-projects/udn-vtol.png?raw=true" alt="" class="w-52">
+                        </div>
+                        <div class="w-[70%]">
+                            
+                            <h1 class="text-[35px] my-4">UDN-VTOL</h1>
+                            
+                            <p>
+
+                                About:UDN-VTOL with autonomous flight capabilities combines the advantages of vertical takeoff and landing with the efficiency of horizontal flight. Its onboard sensors, flight controller, and advanced control systems allow for autonomous operation, making it a powerful tool for various applications such as aerial surveying, mapping, cargo delivery, and more.
+                            </p>
+                            
+                        </div>
+                    </div>
+
+
+                    
+                    
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
+<script src="script.js"></script>
